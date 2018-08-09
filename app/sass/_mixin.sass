@@ -1,0 +1,21 @@
+// Указываем цвет placeholder (цвет)
+=placeholder-color($color)
+  &:-moz-placeholder,
+  &::-moz-placeholder
+    color: $color
+    opacity: 1
+  &::-webkit-input-placeholder
+    color: $color
+
+// Указываем стили для placeholder
+=placeholder
+  &:-ms-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &::-webkit-input-placeholder
+    @content
+  &::placeholder
+    @content
